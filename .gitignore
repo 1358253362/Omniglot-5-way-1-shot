@@ -1,0 +1,20 @@
+# Omniglot 数据集：保留 data/omniglot-py/*.zip（torchvision 校验该路径），
+# 忽略解压后的 3 万多张图片，克隆后由代码自动解压。
+data/omniglot-py/images_background/
+data/omniglot-py/images_evaluation/
+
+# 顶层重复的压缩包：代码不读取该位置，避免重复上传约 15MB。
+data/images_background.zip
+data/images_evaluation.zip
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# 编辑器 / 系统
+.vscode/
+.DS_Store
+Thumbs.db
